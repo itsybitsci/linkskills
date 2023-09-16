@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   companyName: {
     fontSize: SIZES.medium,
     fontFamily: FONT.regular,
-    color: "#B3AEC6",
+    color: COLORS.primary,
     marginTop: SIZES.small / 1.5,
   },
   infoContainer: {
