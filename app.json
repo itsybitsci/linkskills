@@ -7,8 +7,10 @@
     "plugins": [
       "expo-router"
     ],
-    "name": "linkskills",
+    "name": "LinkSkills",
     "slug": "linkskills",
+		"orientation": "portrait",
+    "icon": "./assets/app_icon/android/play_store_512.png",
     "extra": {
       "router": {
         "origin": false
@@ -18,7 +20,10 @@
       }
     },
     "android": {
-      "package": "com.itsybitsci.linkskills"
+      "package": "com.itsybitsci.linkskills",
+			"adaptiveIcon": {
+        "foregroundImage": "./assets/app_icon/android/play_store_512.png"
+      }
     },
     "ios": {
       "bundleIdentifier": "com.itsybitsci.linkskills"
