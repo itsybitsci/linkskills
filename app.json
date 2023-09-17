@@ -16,6 +16,12 @@
       "eas": {
         "projectId": "acf1f7f2-5451-4999-99a1-64f38fa9f7bc"
       }
+    },
+    "android": {
+      "package": "com.itsybitsci.linkskills"
+    },
+    "ios": {
+      "bundleIdentifier": "com.itsybitsci.linkskills"
     }
   }
 }
