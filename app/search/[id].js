@@ -6,7 +6,7 @@ import axios from 'axios'
 
 import { ScreenHeaderBtn, NearbyJobCard } from '../../components'
 import { COLORS, icons, SIZES } from '../../constants'
-import styles from '../../styles/search'
+import styles from './search'
 
 import { RAPID_API_KEY } from "@env";
 
