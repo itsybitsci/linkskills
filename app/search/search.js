@@ -18,7 +18,10 @@ const styles = StyleSheet.create({
         color: COLORS.primary,
     },
     loaderContainer: {
-        marginTop: SIZES.medium
+        marginTop: SIZES.medium,
+				justifyContent: 'center',
+				alignItems: 'center',
+				flex: 1,
     },
     footerContainer: {
         marginTop: SIZES.small,

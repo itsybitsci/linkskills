@@ -89,22 +89,26 @@ const JobSearch = () => {
                     />
                 )}
                 keyExtractor={(item) => item.job_id}
-                contentContainerStyle={{ padding: SIZES.medium, rowGap: SIZES.medium }}
+                contentContainerStyle={{ padding: SIZES.medium, rowGap: SIZES.medium, flexGrow: 1, justifyContent: 'center'}}
                 ListHeaderComponent={() => (
-                    <>
+                    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
                         <View style={styles.container}>
                             <Text style={styles.searchTitle}>{params.id}</Text>
                             <Text style={styles.noOfSearchedJobs}>Job Opportunities</Text>
                         </View>
-                        <View style={styles.loaderContainer}>
-                            {searchLoader ? (
-                                <ActivityIndicator size='large' color={COLORS.primary} />
-                            ) : searchError && (
-                                <Text>Oops something went wrong</Text>
-                            )}
-                        </View>
-                    </>
+                       
+                    </ View>
                 )}
+								ListEmptyComponent={() => (
+									<View style={styles.loaderContainer}>
+										{searchLoader ? (
+												<ActivityIndicator size='large' color={COLORS.primary} />
+										) : searchError && (
+												<Text>Oops something went wrong</Text>
+										)}
+									</View>
+								)}
+								ListFooterComponentStyle={{flex:1, justifyContent: 'flex-end'}}
                 ListFooterComponent={() => (
                     <View style={styles.footerContainer}>
                         <TouchableOpacity

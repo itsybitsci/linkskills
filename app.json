@@ -8,6 +8,14 @@
       "expo-router"
     ],
     "name": "linkskills",
-    "slug": "linkskills"
+    "slug": "linkskills",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "acf1f7f2-5451-4999-99a1-64f38fa9f7bc"
+      }
+    }
   }
 }
