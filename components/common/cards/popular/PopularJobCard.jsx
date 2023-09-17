@@ -7,11 +7,11 @@ import { checkImageURL } from '../../../../utils';
 const PopularJobCard = ({item, selectedJob, handleCardPress}) => {
   return (
     <TouchableOpacity
-			style={styles.container(selectedJob, item)}
+			style={styles.container()}
 			onPress={() => handleCardPress(item)}
 		>
 			<TouchableOpacity
-				style={styles.logoContainer(selectedJob, item)}
+				style={styles.logoContainer()}
 			>
 				<Image 
 					source={{uri: checkImageURL(item?.employer_logo)
@@ -29,7 +29,7 @@ const PopularJobCard = ({item, selectedJob, handleCardPress}) => {
 				{item.employer_name}
 			</Text>
 			<View style={styles.infoContainer}>
-				<Text style={styles.jobName} numberOfLines={1}>
+				<Text style={styles.jobName()} numberOfLines={1}>
 					{item.job_title}
 				</Text>
 				<Text style={styles.location}>
